@@ -1,0 +1,14 @@
+{
+  "app.name": "Bookstore Online",
+  "nav.title": "Category",
+  "nav.list": "All",
+  "nav.hot": "Hot",
+  "nav.bookrack": "Bookrack",
+  "search.placeholder": "Please enter the title or author",
+  "search.btn": "Search",
+  "recommendation": "Fine novel",
+  "hot": "Hot",
+  "recently": "Recently Updated",
+  "more": "More",
+  "author": "Author"
+}

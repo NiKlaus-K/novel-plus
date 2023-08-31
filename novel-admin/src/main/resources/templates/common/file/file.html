@@ -16,7 +16,8 @@
         .aactive {
             color: #13b5b7 !important;
         }
-        .hactive:hover{
+
+        .hactive:hover {
             color: #13b5b7 !important;
         }
     </style>
@@ -33,10 +34,12 @@
                         </button>
                         <div class="hr-line-dashed"></div>
                         <ul class="folder-list" style="padding: 0">
-                            <li><a href="javascript:void(0)" class="file-control hactive" :class="{'aactive':type === ''}"
+                            <li><a href="javascript:void(0)" class="file-control hactive"
+                                   :class="{'aactive':type === ''}"
                                    v-on:click="changeType('')"><i class="fa fa-folder"></i>所有文件</a></li>
 
-                            <li><a href="javascript:void(0)" class="file-control hactive" :class="{'aactive':type === 0}"
+                            <li><a href="javascript:void(0)" class="file-control hactive"
+                                   :class="{'aactive':type === 0}"
                                    v-on:click="changeType(0)"><i class="fa fa-folder"></i>图片</a></li>
 
                             <li><a href="javascript:void(0)" :class="{'aactive':type === 1}"
@@ -49,7 +52,8 @@
                             <li><a href="javascript:void(0)" v-on:click="changeType(3)" :class="{'aactive':type === 3}"
                                    class="file-control hactive"><i class="fa fa-folder"></i>音乐</a></li>
 
-                            <li><a href="javascript:void(0)" v-on:click="changeType(99)" :class="{'aactive':type === 99}"
+                            <li><a href="javascript:void(0)" v-on:click="changeType(99)"
+                                   :class="{'aactive':type === 99}"
                                    class="file-control hactive"><i class="fa fa-folder"></i>其他</a></li>
                         </ul>
                     </div>

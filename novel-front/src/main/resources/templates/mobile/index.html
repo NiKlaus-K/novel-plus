@@ -11,8 +11,6 @@
     <meta name="keywords" th:content="${application.website.keyword}"/>
     <meta name="description"
           th:content="${application.website.description}"/>
-
-
     <div th:include="mobile/common/css :: css"></div>
 
     <style>
@@ -50,42 +48,30 @@
 <!-- 你的HTML代码 -->
 <a name="top"></a>
 <ul class="layui-nav app" lay-filter="" style="display:none;padding:0 10px;text-align: center">
-    <li class="layui-nav-item"><a>分类</a>
-        <dl class="layui-nav-child">
-            <dd><a href="/book/book_ranking.html?catId=1&sort=last_index_update_time">玄幻小说</a></dd>
-            <dd><a href="/book/book_ranking.html?catId=2&sort=last_index_update_time">修真小说</a></dd>
-            <dd><a href="/book/book_ranking.html?catId=3&sort=last_index_update_time">都市小说</a></dd>
-            <dd><a href="/book/book_ranking.html?catId=4&sort=last_index_update_time">历史小说</a></dd>
-            <dd><a href="/book/book_ranking.html?catId=6&sort=last_index_update_time">网游小说</a></dd>
-            <dd><a href="/book/book_ranking.html?catId=5&sort=last_index_update_time">科幻小说</a></dd>
-            <dd><a href="/book/book_ranking.html?catId=7&sort=last_index_update_time">女频小说</a></dd>
-        </dl>
+    <li class="layui-nav-item"><a href="/book/book_ranking.html?sort=last_index_update_time">All</a>
+<!--        <dl class="layui-nav-child">-->
+<!--            <dd><a href="/book/book_ranking.html?catId=1&sort=last_index_update_time">玄幻小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?catId=2&sort=last_index_update_time">修真小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?catId=3&sort=last_index_update_time">都市小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?catId=4&sort=last_index_update_time">历史小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?catId=6&sort=last_index_update_time">网游小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?catId=5&sort=last_index_update_time">科幻小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?catId=7&sort=last_index_update_time">女频小说</a></dd>-->
+<!--        </dl>-->
     </li>
-    <li class="layui-nav-item"><a>全本</a>
-        <dl class="layui-nav-child">
-            <dd><a href="/book/book_ranking.html?bookStatus=1">全部小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=1">玄幻小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=2">修真小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=3">都市小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=4">历史小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=6">网游小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=5">科幻小说</a></dd>
-            <dd><a href="/book/book_ranking.html?bookStatus=1&catId=7">女频小说</a></dd>
-        </dl>
+    <li class="layui-nav-item"><a href="/book/book_ranking.html?sortBy=visit_count">Hot</a>
+<!--        <dl class="layui-nav-child">-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count">全部小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=1">玄幻小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=2">修真小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=3">都市小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=4">历史小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=6">网游小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=5">科幻小说</a></dd>-->
+<!--            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=7">女频小说</a></dd>-->
+<!--        </dl>-->
     </li>
-    <li class="layui-nav-item"><a>排行</a>
-        <dl class="layui-nav-child">
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count">全部小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=1">玄幻小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=2">修真小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=3">都市小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=4">历史小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=6">网游小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=5">科幻小说</a></dd>
-            <dd><a href="/book/book_ranking.html?sortBy=visit_count&catId=7">女频小说</a></dd>
-        </dl>
-    </li>
-    <li class="layui-nav-item"><a href="/user/favorites.html">书架</a></li>
+    <li class="layui-nav-item"><a href="/user/favorites.html">Bookrack</a></li>
 
 </ul>
 <ul class="layui-nav pc" lay-filter="" style="padding:0 36px;text-align: center">
@@ -127,12 +113,12 @@
     <div class="layui-row">
 
         <div class="layui-col-xs10 layui-col-sm10 layui-col-md11 layui-col-lg11" style="padding-top:1%">
-            <input id="title" type="text" name="title" required lay-verify="required" placeholder="请输入书名·作者"
+            <input id="title" type="text" name="title" required lay-verify="required" placeholder="Please enter the title or author"
                    autocomplete="off"
                    class="layui-input">
         </div>
         <div class="layui-col-xs1" style="padding: 1%">
-            <button onclick="searchBooks()" class="layui-btn" lay-submit lay-filter="formDemo">搜索</button>
+            <button onclick="searchBooks()" class="layui-btn" lay-submit lay-filter="formDemo" >Search</button>
         </div>
     </div>
 
@@ -140,9 +126,7 @@
 <div style="height: 1px" class="layui-col-lg1"></div>
 <div class="layui-collapse layui-col-lg10">
     <div class="layui-colla-item">
-        <blockquote class="layui-elem-quote" style="text-align: left;font-size: 16px">
-            精品推荐
-        </blockquote>
+        <blockquote class="layui-elem-quote" style="text-align: left;font-size: 16px">Fine novel</blockquote>
 
 
         <div class="layui-container" style="padding: 0px">
@@ -164,9 +148,7 @@
         </div>
     </div>
     <div class="layui-colla-item">
-        <blockquote class="layui-elem-quote" style="text-align: left;font-size: 16px">
-            热门推荐
-        </blockquote>
+        <blockquote class="layui-elem-quote" style="text-align: left;font-size: 16px">Hot</blockquote>
 
         <div class="layui-container">
             <div class="layui-row" id="hotRecBooks" th:if="${bookMap['3']}">
@@ -179,7 +161,7 @@
                         <div class="layui-col-xs5 layui-col-sm6 layui-col-md6 layui-col-lg6">
                             <ul>
                                 <li style="padding-bottom: 2px" class="line-limit-length" th:text="${book.bookName}"></li>
-                                <li style="padding-bottom: 2px;color: #a6a6a6" th:text="'作者：'+${book.authorName}"></li>
+                                <li style="padding-bottom: 2px;color: #a6a6a6" th:text="'Author：'+${book.authorName}"></li>
                                 <li style="color: #a6a6a6;width: 180px;height:60px;overflow: hidden" th:utext="${book.bookDesc}">                                </li></ul>
                         </div>
                         <div style="font-style: italic;color: red" class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2"></div>
@@ -199,9 +181,10 @@
 <div class="layui-colla-item layui-col-lg10"
      style="border-width: 1px;border-style: solid;border-radius: 2px;border-top-width: 0px"><a
         href="javascript:moreNewBooks()">
-    <blockquote class="layui-elem-quote" style="text-align: left;color: #000;font-size: 16px">最新更新
+    <blockquote class="layui-elem-quote" style="text-align: left;color: #000;font-size: 16px">
+        Recently Updated
         <div style="float: right; margin-right: 20px"><i style="font-size: 14px;color:#666"
-                                                         class="layui-icon">更多&#xe65b;</i>
+                                                         class="layui-icon">More &#xe65b;</i>
         </div>
     </blockquote>
 </a>
@@ -225,8 +208,6 @@
 </div>
 
 <script src="/mobile/js/wap_collect.js"></script>
-
-
 <script>
 
 
@@ -243,6 +224,9 @@
                 for (var i = 0; i < 10; i++) {
 
                     var updateRankBook = updateRankBooks[i];
+                    if(!updateRankBook) {
+                        continue
+                    }
                     if (updateRankBook.bookDesc) {
                         updateRankBook.bookDesc = updateRankBook.bookDesc.replace(/<[^>]+>/g, "").replace(/\s+/g, "");
                     }
